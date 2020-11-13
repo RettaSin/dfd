@@ -21,6 +21,7 @@ public class Main {
         System.out.println(mest);
     }
 
+
      public static void nastr(){
         System.out.println("Смена имени");
         System.out.println("Введите имя:");
@@ -96,8 +97,8 @@ public class Main {
         Thread.sleep(1000);
         System.out.println("1. Да. 2. Нет");
 
-        Scanner blya = new Scanner(System.in);
-        String k = blya.nextLine();
+        Scanner bla = new Scanner(System.in);
+        String k = bla.nextLine();
         if(k.equals("1")) {
             System.out.println("Шел 2046 год. Холодная война переросла в атомную и в конце концов многие люди погибли вначале при взрыве бомбы ");
             Thread.sleep(1000);
@@ -140,12 +141,10 @@ public class Main {
         {
             System.out.println("Пф ну и досвидос бета версия окончена");
             Thread.sleep(1000);
-            System.out.println("Можете ввести 'достиж' и посмотреть на свои заслуги лох");
+            System.out.println("Можете ввести 'достиж' и посмотреть на свои заслуги, бака!!ч");
             Thread.sleep(1000);
             System.out.println("Так же проверить функции: статы, настройки");
-            if (k.equals("настройки")){ nastr();}
-            if (k.equals("статы")) {stat();};
-            if (k.equals("достиж")) {nodostij();}
+            cyc();
         }
 
         if (k.equals("настройки")){ nastr();}
@@ -168,6 +167,7 @@ public class Main {
         }
         if (b.equals("достиж")) {
             dostij();
+            nodostij();
             cyc();
         }
     }
